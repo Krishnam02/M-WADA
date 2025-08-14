@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maharaja Wada® - The King of Taste</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Maharaja Wada®</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#creators">Creators</a></li>
+        <li><a href="#specialities">Specialities</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#choose">Why Choose Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">The King of Taste</h1>
+      <p class="hero-sub">Serving Royal Street Food Experience</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about section">
+    <div class="about-text" data-aos="fade-right">
+      <h2>About Us</h2>
+      <p>From humble beginnings in Pune, Maharaja Vada Pav has grown into a celebrated brand loved across multiple cities.</p>
+      <ul>
+        <li>Authentic street food with a royal touch</li>
+        <li>Signature spice-infused vada pav and café-style treats</li>
+        <li>Freshness, hygiene, and exceptional service</li>
+        <li>Creating moments and memories through food</li>
+      </ul>
+    </div>
+    <div class="about-img" data-aos="fade-left">
+      <img src="https://via.placeholder.com/500x400" alt="About Us">
+    </div>
+  </section>
+
+
+<!-- Creators -->
+<section id="creators" class="section creators">
+    <h2 data-aos="fade-up">Our Creators</h2>
+    <div class="creator-list">
+  
+      <div class="creator-row" data-aos="fade-right">
+        <img src="founder1.jpg" alt="Abhay Sangoi">
+        <div class="creator-info">
+          <h3>Abhay Sangoi</h3>
+          <p>Founder</p>
+        </div>
+      </div>
+  
+      <div class="creator-row" data-aos="fade-left">
+        <img src="founder2.jpg" alt="Girish Kulkarni">
+        <div class="creator-info">
+          <h3>Girish Kulkarni</h3>
+          <p>Founder</p>
+        </div>
+      </div>
+  
+      <div class="creator-row" data-aos="fade-right">
+        <img src="founder3.jpg" alt="Rajesh Shah">
+        <div class="creator-info">
+          <h3>Rajesh Shah</h3>
+          <p>Founder</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- Specialities -->
+  <section id="specialities" class="section">
+    <h2 data-aos="zoom-in">Our Specialities</h2>
+    <div class="special-grid">
+      <div class="special" data-aos="zoom-in"><h3>Wada Pav</h3></div>
+      <div class="special" data-aos="zoom-in"><h3>Maharashtrian Snacks</h3></div>
+      <div class="special" data-aos="zoom-in"><h3>Sandwiches</h3></div>
+      <div class="special" data-aos="zoom-in"><h3>Cold Beverages</h3></div>
+    </div>
+  </section>
+
+
+  <!-- Menu -->
+<section id="menu" class="section menu">
+    <h2 data-aos="fade-up">Our Menu</h2>
+  
+    <!-- Wada Pav -->
+    <h3 class="menu-category" data-aos="fade-right">Wada Pav</h3>
+    <div class="menu-grid">
+      <div class="menu-item" data-aos="fade-up">
+        <img src="wadapav1.jpg" alt="Prime Idea Vada Pav">
+        <h4>Prime Idea</h4>
+        <p>Crisp potato patty in soft pav with signature chutneys.</p>
+      </div>
+      <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="wadapav2.jpg" alt="Tandoori Vada Pav">
+        <h4>Tandoori</h4>
+        <p>Smoky tandoori flavors with spicy chutneys.</p>
+      </div>
+      <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="wadapav3.jpg" alt="Cheesy Jalapeno Vada Pav">
+        <h4>Cheesy Jalapeno</h4>
+        <p>Melting cheese with a spicy jalapeno kick.</p>
+      </div>
+    </div>
+  
+    <!-- Sandwiches -->
+    <h3 class="menu-category" data-aos="fade-right">Sandwiches</h3>
+    <div class="menu-grid">
+      <div class="menu-item" data-aos="fade-up">
+        <img src="sandwich1.jpg" alt="Veg Cheese Grilled">
+        <h4>Veg Cheese Grilled</h4>
+        <p>Fresh vegetables and cheese grilled to golden perfection.</p>
+      </div>
+      <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="sandwich2.jpg" alt="Peri Peri Cheese Grilled">
+        <h4>Peri Peri Cheese Grilled</h4>
+        <p>Cheese sandwich with tangy peri peri seasoning.</p>
+      </div>
+    </div>
+  
+    <!-- Beverages & Snacks -->
+    <h3 class="menu-category" data-aos="fade-right">Beverages & Snacks</h3>
+    <div class="menu-grid">
+      <div class="menu-item" data-aos="fade-up">
+        <img src="snack1.jpg" alt="Jamun Shots">
+        <h4>Jamun Shots</h4>
+        <p>Refreshing sweet and tangy jamun-flavored shots.</p>
+      </div>
+      <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="snack2.jpg" alt="Peri Peri Fries">
+        <h4>Peri Peri Fries</h4>
+        <p>Crispy fries topped with zesty peri peri spices.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Why Choose Us -->
+  <section id="choose" class="section choose">
+    <h2 data-aos="fade-right">Why Choose Us?</h2>
+    <ul>
+      <li data-aos="fade-right">Unmatched Taste & Quality</li>
+      <li data-aos="fade-right" data-aos-delay="100">Reasonable Pricing</li>
+      <li data-aos="fade-right" data-aos-delay="200">Hygienic & Modern Technology</li>
+      <li data-aos="fade-right" data-aos-delay="300">Strong Brand Identity</li>
+      <li data-aos="fade-right" data-aos-delay="400">Customer-Centric Service</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2 data-aos="fade-up">Contact Us</h2>
+    <p>📍 Maharashtra | Karnataka</p>
+    <div class="contact-box" data-aos="zoom-in">
+      <p>Abhay Sangoi – +91 98440 81481</p>
+      <p>Girish Kulkarni – +91 94231 36853</p>
+      <p>Rajesh Shah – +91 94030 07650</p>
+    </div>
+    <form class="contact-form" data-aos="fade-up">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Maharaja Wada® © 2025 | The King of Taste</p>
+  </footer>
+
+  <!-- JS + Animation Libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
