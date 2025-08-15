@@ -120,11 +120,16 @@ p, li {
   display: block;
 }
 
-/* Mobile image */
 .hero-image.mobile {
-  background-image: url('HERO.png.png'); /* your mobile image */
-  display: none;
+  background-image: url('HERO.png'); /* your mobile image */
+  background-size: cover;        /* fill the area */
+  background-position: center;   /* keep it centered */
+  background-repeat: no-repeat;  /* no tiling */
+  display: none;                 /* hidden by default */
+  width: 100%;
+  height: 100vh;                 /* full screen height (adjust if needed) */
 }
+
 
 /* Show mobile image on small screens */
 @media (max-width: 768px) {
@@ -393,6 +398,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
