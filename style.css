@@ -155,8 +155,9 @@ p, li {
   }
 }
 
-.explore-btn {
-    margin-top: 10px; /* push it a bit down */
+  .explore-btn {
+    margin-top: 60vh; /* push button down below J */
+    display: inline-block;
   }
 }
 
@@ -406,6 +407,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
