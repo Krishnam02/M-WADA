@@ -122,7 +122,7 @@ p, li {
 
 /* Mobile image */
 .hero-image.mobile {
-  background-image: url('WADAPAV.png'); /* your mobile image */
+  background-image: url('HERO.png.png'); /* your mobile image */
   display: none;
 }
 
@@ -393,6 +393,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
