@@ -103,6 +103,16 @@ p, li {
     color: white;
     position: relative;
 }
+
+
+/* Mobile fix */
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain;  /* show full image */
+        background-position: top center;
+        background-color: #000;    /* filler for empty space */
+    }
+}
   
 .hero::after {
     content: '';
@@ -377,4 +387,5 @@ footer {
       transform: translateY(0);
     }
 }
+
 
