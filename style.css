@@ -155,6 +155,11 @@ p, li {
   }
 }
 
+.explore-btn {
+    margin-top: 40px; /* push it a bit down */
+  }
+}
+
 /* Explore button */
 .explore-btn {
   display: inline-block;
@@ -401,6 +406,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
