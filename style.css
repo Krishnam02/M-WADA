@@ -157,7 +157,7 @@ p, li {
 
    .explore-btn {
     position: absolute;  /* keep it fixed relative to hero-section */
-    bottom: 80px;        /* distance from bottom */
+    bottom: 160px;        /* distance from bottom */
     left: 50%;
     transform: translateX(-50%); /* center it horizontally */
     margin-top: 0;       /* reset margin so it's not conflicting */
@@ -411,6 +411,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
