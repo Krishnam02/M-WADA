@@ -145,7 +145,7 @@ p, li {
 /* Explore button */
 .explore-btn {
   position: absolute;  
-  bottom: 150px;       /* thoda upar niche adjust kar sakte ho */
+  bottom: 200px;       /* thoda upar niche adjust kar sakte ho */
   left: 50%;
   transform: translateX(-50%);
   background-color: #b30000; /* Red */
@@ -393,6 +393,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
