@@ -136,50 +136,32 @@ p, li {
   }
 }
 
-/* Hero text */
-.hero-content h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
+/* Hide ALL hero text (desktop + mobile) */
+.hero-content h1,
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-/* Hide hero text on mobile */
-@media (max-width: 768px) {
-  .hero-content h1,
-  .hero-content p {
-    display: none;
-  }
-}
-
-   .explore-btn {
-    position: absolute;  /* keep it fixed relative to hero-section */
-    bottom: 200px;        /* distance from bottom */
-    left: 50%;
-    transform: translateX(-50%); /* center it horizontally */
-    margin-top: 0;       /* reset margin so it's not conflicting */
-    background-color: #b30000; /* ensure red background stays */
-  }
+  display: none !important;
 }
 
 /* Explore button */
 .explore-btn {
-  display: inline-block;
-  padding: 12px 25px;
+  position: absolute;  
+  bottom: 150px;       /* thoda upar niche adjust kar sakte ho */
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #b30000; /* Red */
-  color: #fff;
-  text-decoration: none;
+  color: #fff !important;    /* force white text */
+  text-decoration: none !important;
   font-weight: bold;
+  padding: 12px 25px;
   border-radius: 5px;
   transition: background 0.3s;
+  z-index: 5; /* ensure button is visible above everything */
 }
 
 .explore-btn:hover {
   background-color: #800000; /* Darker red */
 }
+
 
   
 /* ==============================
@@ -411,6 +393,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
