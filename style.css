@@ -104,13 +104,10 @@ p, li {
     position: relative;
 }
 
-
-/* Mobile fix */
 @media (max-width: 768px) {
     .hero {
-        background-size: contain;  /* show full image */
-        background-position: top center;
-        background-color: #000;    /* filler for empty space */
+        background-position: center top; /* show top part of logo */
+        height: 80vh; /* smaller height for phone */
     }
 }
   
@@ -387,5 +384,6 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
