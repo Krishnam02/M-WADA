@@ -147,6 +147,14 @@ p, li {
   margin-bottom: 20px;
 }
 
+/* Hide hero text on mobile */
+@media (max-width: 768px) {
+  .hero-content h1,
+  .hero-content p {
+    display: none;
+  }
+}
+
 /* Explore button */
 .explore-btn {
   display: inline-block;
@@ -393,6 +401,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
