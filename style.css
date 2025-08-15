@@ -93,7 +93,8 @@ p, li {
    HERO
 ============================== */
 .hero {
-    background: url('https://via.placeholder.com/1500x800') center/cover no-repeat;
+    background: url('hero-bg.jpg') no-repeat center center;
+    background-size: cover;   /* makes it fill the screen */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -376,3 +377,4 @@ footer {
       transform: translateY(0);
     }
 }
+
