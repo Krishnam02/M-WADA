@@ -121,7 +121,7 @@ p, li {
 }
 
 .hero-image.mobile {
-  background-image: url('HERO.png'); /* your mobile image */
+  background-image: url('HERO.png.png'); /* your mobile image */
   background-size: cover;        /* fill the area */
   background-position: center;   /* keep it centered */
   background-repeat: no-repeat;  /* no tiling */
@@ -398,6 +398,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
