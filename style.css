@@ -156,7 +156,7 @@ p, li {
 }
 
 .explore-btn {
-    margin-top: 40px; /* push it a bit down */
+    margin-top: 10px; /* push it a bit down */
   }
 }
 
@@ -406,6 +406,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
