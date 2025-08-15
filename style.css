@@ -155,9 +155,13 @@ p, li {
   }
 }
 
-  .explore-btn {
-    margin-top: 40vh; /* push button down below J */
-    display: inline-block;
+   .explore-btn {
+    position: absolute;  /* keep it fixed relative to hero-section */
+    bottom: 40px;        /* distance from bottom */
+    left: 50%;
+    transform: translateX(-50%); /* center it horizontally */
+    margin-top: 0;       /* reset margin so it's not conflicting */
+    background-color: #b30000; /* ensure red background stays */
   }
 }
 
@@ -407,6 +411,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
