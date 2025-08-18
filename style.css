@@ -309,7 +309,19 @@ p, li {
     font-size: 0.9rem;
     color: #444;
   }
-nbgy  
+
+.choose ul {
+    list-style-position: outside; /* dots thoda door */
+    padding-left: 20px;           /* adjust spacing */
+    margin: 0 auto;
+    display: inline-block;        /* center me rakho */
+    text-align: left;             /* text left align */
+  }
+  
+  .choose li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
 
   
 /* ==============================
@@ -398,6 +410,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
