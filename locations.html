@@ -17,8 +17,9 @@
     header {
       text-align: center;
       padding: 50px 20px 30px;
-      background: linear-gradient(135deg, #8B0000, #B22222);
-      color: #fff;
+      background: #fff; /* White background */
+      color: #8B0000;   /* Dark Red text */
+      border-bottom: 3px solid #8B0000; /* Classy underline */
     }
 
     header h1 {
@@ -26,11 +27,13 @@
       margin-bottom: 10px;
       font-weight: 700;
       letter-spacing: 1px;
+      color: #8B0000; /* Ensure heading stays red */
     }
 
     header p {
       font-size: 1.2rem;
       opacity: 0.9;
+      color: #B22222; /* Slightly lighter red */
     }
 
     .locations-section {
@@ -100,6 +103,68 @@
   </style>
 </head>
 <body>
+
+
+  <header>
+    <h1>🏰 Our Royal Locations</h1>
+    <p>Find Maharaja Wada outlets near you</p>
+  </header>
+
+  <section class="locations-section">
+    <div class="locations-grid">
+
+      <div class="location-card">
+        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?indian-restaurant');"></div>
+        <div class="location-content">
+          <div class="location-title">Pune Camp</div>
+          <div class="location-address">123, MG Road, Pune Camp, Maharashtra</div>
+          <a href="https://maps.google.com?q=123+MG+Road+Pune+Camp" class="map-link" target="_blank">📍 View on Map</a>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?mumbai,food');"></div>
+        <div class="location-content">
+          <div class="location-title">Mumbai Dadar</div>
+          <div class="location-address">45, Shivaji Park Road, Dadar, Mumbai</div>
+          <a href="https://maps.google.com?q=Shivaji+Park+Dadar+Mumbai" class="map-link" target="_blank">📍 View on Map</a>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?street-food');"></div>
+        <div class="location-content">
+          <div class="location-title">Nashik College Road</div>
+          <div class="location-address">78, College Road, Nashik, Maharashtra</div>
+          <a href="https://maps.google.com?q=College+Road+Nashik" class="map-link" target="_blank">📍 View on Map</a>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?kolhapur');"></div>
+        <div class="location-content">
+          <div class="location-title">Kolhapur Rankala</div>
+          <div class="location-address">Near Rankala Lake, Kolhapur</div>
+          <a href="https://maps.google.com?q=Rankala+Lake+Kolhapur" class="map-link" target="_blank">📍 View on Map</a>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?bangalore,restaurant');"></div>
+        <div class="location-content">
+          <div class="location-title">Bangalore Indiranagar</div>
+          <div class="location-address">12th Main, Indiranagar, Bangalore</div>
+          <a href="https://maps.google.com?q=12th+Main+Indiranagar+Bangalore" class="map-link" target="_blank">📍 View on Map</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
+
+
 
   <header>
     <h1>🏰 Our Royal Locations</h1>
