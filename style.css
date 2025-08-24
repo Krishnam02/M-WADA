@@ -126,7 +126,7 @@ p, li {
 @media (max-width: 768px) {
   .hero {
     height: 70vh; /* shorter for phones */
-    background: url('hero-mobile.jpg') no-repeat center center;
+    background: url('hero-mobile.png') no-repeat center center;
     background-size: cover;
   }
 
@@ -378,6 +378,7 @@ footer {
       transform: translateY(0);
     }
 }
+
 
 
 
