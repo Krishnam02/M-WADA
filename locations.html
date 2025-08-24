@@ -4,162 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maharaja Wada - Our Locations</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Playfair Display', serif;
-      background: #faf5ef;
+      font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
-      color: #2c2c2c;
+      background: #f8f5f2;
+      color: #4b1e1e;
     }
 
     header {
       text-align: center;
-      padding: 50px 20px 30px;
-      background: #fff; /* White background */
-      color: #8B0000;   /* Dark Red text */
-      border-bottom: 3px solid #8B0000; /* Classy underline */
+      padding: 3rem 1rem 1rem;
     }
 
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: #8B0000; /* Ensure heading stays red */
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #800000;
     }
 
     header p {
+      margin-top: .5rem;
       font-size: 1.2rem;
-      opacity: 0.9;
-      color: #B22222; /* Slightly lighter red */
+      color: #444;
     }
 
-    .locations-section {
-      max-width: 1200px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-
-    .locations-grid {
+    .locations-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
     }
 
     .location-card {
       background: #fff;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s;
     }
 
     .location-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
     }
 
-    .location-image {
-      height: 180px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .location-content {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .location-title {
+    .location-card h2 {
+      color: #800000;
       font-size: 1.5rem;
-      font-weight: 600;
-      color: #8B0000;
-      margin-bottom: 10px;
+      margin-bottom: .5rem;
     }
 
-    .location-address {
-      font-size: 1rem;
+    .location-card p {
+      font-style: italic;
       color: #555;
-      margin-bottom: 15px;
+      margin-bottom: 1rem;
     }
 
-    .map-link {
+    .map {
+      width: 100%;
+      height: 200px;
+      border: 0;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .map-btn {
       display: inline-block;
-      background: #8B0000;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 30px;
+      padding: 0.6rem 1.2rem;
+      background: #800000;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
       text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 600;
+      font-weight: bold;
       transition: background 0.3s;
     }
 
-    .map-link:hover {
-      background: #B22222;
+    .map-btn:hover {
+      background: #a00000;
     }
   </style>
 </head>
 <body>
 
-
   <header>
-    <h1>🏰 Our Royal Locations</h1>
-    <p>Find Maharaja Wada outlets near you</p>
+    <h1>Our Locations</h1>
+    <p>Find Maharaja Wada Near You</p>
   </header>
 
-  <section class="locations-section">
-    <div class="locations-grid">
-
-      <div class="location-card">
-        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?indian-restaurant');"></div>
-        <div class="location-content">
-          <div class="location-title">Pune Camp</div>
-          <div class="location-address">123, MG Road, Pune Camp, Maharashtra</div>
-          <a href="https://maps.google.com?q=123+MG+Road+Pune+Camp" class="map-link" target="_blank">📍 View on Map</a>
-        </div>
-      </div>
-
-      <div class="location-card">
-        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?mumbai,food');"></div>
-        <div class="location-content">
-          <div class="location-title">Mumbai Dadar</div>
-          <div class="location-address">45, Shivaji Park Road, Dadar, Mumbai</div>
-          <a href="https://maps.google.com?q=Shivaji+Park+Dadar+Mumbai" class="map-link" target="_blank">📍 View on Map</a>
-        </div>
-      </div>
-
-      <div class="location-card">
-        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?street-food');"></div>
-        <div class="location-content">
-          <div class="location-title">Nashik College Road</div>
-          <div class="location-address">78, College Road, Nashik, Maharashtra</div>
-          <a href="https://maps.google.com?q=College+Road+Nashik" class="map-link" target="_blank">📍 View on Map</a>
-        </div>
-      </div>
-
-      <div class="location-card">
-        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?kolhapur');"></div>
-        <div class="location-content">
-          <div class="location-title">Kolhapur Rankala</div>
-          <div class="location-address">Near Rankala Lake, Kolhapur</div>
-          <a href="https://maps.google.com?q=Rankala+Lake+Kolhapur" class="map-link" target="_blank">📍 View on Map</a>
-        </div>
-      </div>
-
-      <div class="location-card">
-        <div class="location-image" style="background-image: url('https://source.unsplash.com/800x600/?bangalore,restaurant');"></div>
-        <div class="location-content">
-          <div class="location-title">Bangalore Indiranagar</div>
-          <div class="location-address">12th Main, Indiranagar, Bangalore</div>
-          <a href="https://maps.google.com?q=12th+Main+Indiranagar+Bangalore" class="map-link" target="_blank">📍 View on Map</a>
-        </div>
-      </div>
-
+  <section class="locations-container">
+    
+    <!-- Pune -->
+    <div class="location-card">
+      <h2>Pune</h2>
+      <p>Maharaja Wada, Pune</p>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.980073935234!2d73.8339454!3d18.5328037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c05f46db39a7%3A0x2c1e8a0a5cb54c58!2sMaharaja%20Wada%20Pune!5e0!3m2!1sen!2sin!4v1692882000000" allowfullscreen="" loading="lazy"></iframe>
+      <a href="https://www.google.com/maps/search/maharaja+wada+pune/@18.5328037,73.8339454,9z?entry=s&sa=X&ved=1t%3A199789" target="_blank" class="map-btn">Open in Google Maps</a>
     </div>
-  </section>
 
+    <!-- Pune -->
+    <div class="location-card">
+      <h2>Pune</h2>
+      <p>Maharaja Wada, Pune</p>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.580073935234!2d73.8163488!3d18.5003311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c05f46db39a7%3A0x2c1e8a0a5cb54c58!2sMaharaja%20Wada%20Pune%202!5e0!3m2!1sen!2sin!4v1692882050000" allowfullscreen="" loading="lazy"></iframe>
+      <a href="https://www.google.com/maps/search/maharaja+wada+pune/@18.5003311,73.8163488,9z?entry=s&sa=X&ved=1t%3A199789" target="_blank" class="map-btn">Open in Google Maps</a>
+    </div>
+
+    <!-- Baramati -->
+    <div class="location-card">
+      <h2>Baramati</h2>
+      <p>Maharaja Wada, Baramati</p>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.289745490226!2d74.5833488!3d18.1502311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3a16098a9e08d%3A0x18650c695cf44adb!2sMaharaja%20Vada%20Pav%20Baramati!5e0!3m2!1sen!2sin!4v1692882100000" allowfullscreen="" loading="lazy"></iframe>
+      <a href="https://www.google.com/maps/place/maharaja+vada+pav+baramati/data=!4m2!3m1!1s0x3bc3a16098a9e08d:0x18650c695cf44adb?sa=X&ved=1t:242&ictx=111" target="_blank" class="map-btn">Open in Google Maps</a>
+    </div>
+
+    <!-- Bangalore -->
+    <div class="location-card">
+      <h2>Bangalore</h2>
+      <p>Maharaja Wada, Bangalore</p>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.215680164122!2d77.594643!3d12.971599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e988c6a2e9%3A0x50251ec5b7f9cdb4!2sMaharaja%20Wada%20Bangalore!5e0!3m2!1sen!2sin!4v1692882200000" allowfullscreen="" loading="lazy"></iframe>
+      <a href="https://www.google.com/maps/place/maharaja+wada+bangalore/data=!4m2!3m1!1s0x3bae15e988c6a2e9:0x50251ec5b7f9cdb4?sa=X&ved=1t:242&ictx=111" target="_blank" class="map-btn">Open in Google Maps</a>
+    </div>
+
+  </section>
 </body>
 </html>
